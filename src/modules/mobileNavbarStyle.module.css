@@ -1,0 +1,119 @@
+.mobileNavigation {
+    display: none;
+}
+
+.mobileNavbarBody {
+    background-color: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100vh;
+    z-index: 240;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -5px 0px 10px -8px black;
+    transition: all 200ms ease-in;
+}
+
+.mobileNavbarBody a, #mobileHomeLink {
+    color: var(--text-color);
+    font-family: Raleway;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin:50px 0px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    text-decoration: none;
+}
+
+.mobileHomeLinks a {
+    padding: 10px;
+    margin: 10px;
+    text-transform: lowercase;
+    font-size: 16px;
+}
+
+#mobileIcon {
+    color: var(--text-color);
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 220;
+    background-color: var(--primary-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#mobileExitIcon {
+    color: var(--text-color);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@-webkit-keyframes animated {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes animated {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mobileNavigation {
+        display: block;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    .mobileNavbarBody {
+        width: 25%;
+    }
+    .mobileNavbarBody a, #mobileHomeLink {
+        font-size: 20px;
+    }
+    .mobileHomeLinks a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .mobileNavbarBody {
+        width: 35%;
+    }
+    .mobileNavbarBody a, #mobileHomeLink {
+        font-size: 18px;
+    }
+    .mobileHomeLinks a {
+        font-size: 14px;
+    }
+}
+
+@media (orientation: landscape) {
+    .mobileNavbarBody a, #mobileHomeLink {
+        margin: 15px;
+        padding: 0;
+    }
+}
+
+
+    

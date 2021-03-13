@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Raleway:wght@700|Roboto&display=swap');
+
+.pageContainer {
+  background: #edf3f2;
+  background: linear-gradient(107deg, rgba(237,243,242,1) 20%, rgba(255,255,255,1) 50%, rgba(237,243,242,1) 80%);
+  z-index: 20;
+  width: calc(100% - 180px);
+  margin: 0 0 0 180px;
+  padding: 0;
+  position: relative;
+  height: 100%;
+  font-family: 'Playfair Display', serif;
+  color: var(--text-color);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.flexColumn {
   flex-direction: column;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.roundedLine {
+  border-top: 5px solid var(--secondary-color);
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.expand {
+  -webkit-animation: expand 0.5s ease-in forwards;
+          animation: expand 0.5s ease-in forwards;
+}
+
+@-webkit-keyframes expand {
+  0% {
+      width: 0px
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+      width: 250px;
+  }
+}
+
+@keyframes expand {
+  0% {
+      width: 0px
+  }
+  100% {
+      width: 250px;
+  }
+}
+
+.pop {
+  -webkit-animation: pop 0.4s forwards ease-in;
+          animation: pop 0.4s forwards ease-in;
+}
+
+.actionButton {
+  cursor: pointer;
+  padding: 20px;
+  font-size: 20px;
+  background-color: var(--attention-color);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px black;
+  transition: 0.1s ease-in;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+  color: var(--text-color)
+}
+
+.actionButton:hover {
+  transform: translateY(2%);
+  background-color: rgb(190, 29, 61);
+}
+  
+@-webkit-keyframes pop {
+  0% {
+    opacity: 0;
+    transform: translateY(1%);
+    }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+  
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: translateY(1%);
+    }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+a {
+  text-decoration: none;
+  color: var(--showcase-color)
+}
+
+
+
+@media (max-width: 1000px) {
+  .pageContainer {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .isAnimated {
+    -webkit-animation: none;
+            animation: none;
+    /* change hardcoded properties from react-animate-on-scroll so there are no animations on mobile */
+    opacity: 1 !important;
+  }
+  @-webkit-keyframes expand {
+    0% {
+        width: 0px
+    }
+    100% {
+        width: 200px;
+    }
+  }
+  @keyframes expand {
+    0% {
+        width: 0px
+    }
+    100% {
+        width: 200px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  @-webkit-keyframes expand {
+    0% {
+        width: 0px
+    }
+    100% {
+        width: 150px;
+    }
+  }
+  @keyframes expand {
+    0% {
+        width: 0px
+    }
+    100% {
+        width: 150px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  @-webkit-keyframes expand {
+    0% {
+        width: 0px
+    }
+    100% {
+        width: 125px;
+    }
+  }
+  @keyframes expand {
+    0% {
+        width: 0px
+    }
+    100% {
+        width: 125px;
+    }
   }
 }
