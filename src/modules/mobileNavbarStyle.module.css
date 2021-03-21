@@ -1,119 +1,132 @@
 .mobileNavigation {
-    display: none;
+  display: none;
 }
 
 .mobileNavbarBody {
-    background-color: var(--secondary-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 25%;
-    height: 100vh;
-    z-index: 240;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset -5px 0px 10px -8px black;
-    transition: all 200ms ease-in;
+  background-color: var(--secondary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 240;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -5px 0px 10px -8px black;
+  transition: all 200ms ease-in;
 }
 
-.mobileNavbarBody a, #mobileHomeLink {
-    color: var(--text-color);
-    font-family: Raleway;
-    text-transform: uppercase;
-    font-size: 30px;
-    margin:50px 0px;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    text-decoration: none;
+.mobileNavbarBody a {
+  color: var(--text-color);
+  font-family: Raleway;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin:50px 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
 }
 
-.mobileHomeLinks a {
-    padding: 10px;
-    margin: 10px;
-    text-transform: lowercase;
-    font-size: 16px;
+.hamburger {
+  display: flex;
+  cursor: pointer;
+  width: 33px;
+  height: 20px;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-#mobileIcon {
-    color: var(--text-color);
-    font-size: 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 220;
-    background-color: var(--primary-color);
-    padding: 10px;
-    cursor: pointer;
+.hamburger:focus {
+  outline: none;
 }
 
-#mobileExitIcon {
-    color: var(--text-color);
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    font-size: 30px;
-    padding: 10px;
-    cursor: pointer;
+.hamburgerBar {
+  width: 100%;
+  height: 4px;
+  background-color: var(--text-color);
+  border-radius: 10px;
+  display: block;
+  z-index: 250;
+  transition: all 200ms ease-in;
+}
+
+.hamburgerWrapper {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 249;
+  display: none;
+  padding: 20px;
+
+}
+
+#bar1 {
+  transform-origin: 50% 50%;
+}
+
+#bar3 {
+  transform-origin: 50% 50%;
 }
 
 @-webkit-keyframes animated {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 100%;
+  }
 }
 
 @keyframes animated {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 100%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .mobileNavigation {
-        display: block;
-    }
+  .mobileNavigation {
+      display: block;
+  }
+  .hamburgerWrapper {
+      display: flex;
+  }
 }
 
 @media (max-width: 1000px) and (orientation: landscape) {
-    .mobileNavbarBody {
-        width: 25%;
-    }
-    .mobileNavbarBody a, #mobileHomeLink {
-        font-size: 20px;
-    }
-    .mobileHomeLinks a {
-        font-size: 15px;
-    }
+  .mobileNavbarBody {
+      width: 25%;
+  }
+  .mobileNavbarBody a {
+      font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    .mobileNavbarBody {
-        width: 35%;
-    }
-    .mobileNavbarBody a, #mobileHomeLink {
-        font-size: 18px;
-    }
-    .mobileHomeLinks a {
-        font-size: 14px;
-    }
+  .mobileNavbarBody {
+      width: 35%;
+  }
+  .mobileNavbarBody a {
+      font-size: 18px;
+  }
+  .mobileHomeLinks a {
+      font-size: 14px;
+  }
 }
 
 @media (orientation: landscape) {
-    .mobileNavbarBody a, #mobileHomeLink {
-        margin: 15px;
-        padding: 0;
-    }
+  .mobileNavbarBody a {
+      margin: 15px;
+      padding: 0;
+  }
 }
-
-
-    

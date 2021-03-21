@@ -1,8 +1,8 @@
 :root {
   --box-shadow: 2px 2px 5px rgb(0, 0, 0);
-  --text-color: rgb(255, 255, 255);
+  --text-color: #FBB13C;
   --primary-color: #011936;
-  --secondary-color: #235789;
+  --secondary-color: #424242;
   --tertiary-color: #f9dc5c;
   --attention-color: #ee254e;
   scroll-behavior: smooth;
