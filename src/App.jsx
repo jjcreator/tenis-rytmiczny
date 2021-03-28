@@ -18,10 +18,13 @@ const App = () => {
           <Route path="/" exact>
             <Main />
           </Route>
-          <Route path="/about">
+          <Route path="/ksiazka">
             <About />
           </Route>
-          <Route path="/contact">
+          <Route path="/recenzje">
+            <About />
+          </Route>
+          <Route path="/autor">
             <Contact />
           </Route>
         </Switch>

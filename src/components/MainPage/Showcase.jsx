@@ -1,52 +1,41 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable max-len */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import styles from '../../modules/showcaseStyle.module.css';
-import team from '../../images/team.jpg';
-import aboutImg from '../../images/team2.jpg';
-import contactImg from '../../images/contact.jpg';
 
 const {
+  book,
+  bookContainer,
+  bookCover,
   showcase,
   showcaseTitle,
-  showcaseBody,
-  teamImg,
+  showcaseSubtitle,
   showcaseDescription,
   showcaseHeader,
   showcaseParagraph,
-  doubleArrow,
+  largeParagraph,
+  smallParagraph,
+  title,
 } = styles;
 
-function Showcase() {
-  const scrollDown = () => {
-    window.scrollTo(0, window.innerHeight);
-  };
-
-  return (
-    <section id={showcase} className="flexColumn">
-      <h1 className="pop" id={showcaseTitle}>Tenis rytmiczny</h1>
-      <div className="pop" id={showcaseBody}>
-        <img id={teamImg} src={team} alt="the team" />
-        <img src={aboutImg} alt="about" style={{ width: '0' }} />
-        <img src={contactImg} alt="the team" style={{ width: '0' }} />
-        <div className="flexColumn" id={showcaseDescription}>
-          <h2 id={showcaseHeader}>Best fake specialists</h2>
-          <p id={showcaseParagraph}>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
-          </p>
-          <Link to="/contact">
-            <button className="actionButton" type="button">Get help now</button>
-          </Link>
-        </div>
+const Showcase = () => (
+  <section id={showcase} className="flexColumn">
+    <div className="pop" id={showcaseHeader}>
+      <h1 className={title} id={showcaseTitle}>Tenis rytmiczny</h1>
+      <h2 className={title} id={showcaseSubtitle}>Zdrowy styl życia</h2>
+    </div>
+    <div className={bookContainer}>
+      <div className={`flexColumn ${book}`}>
+        <div className={bookCover} />
+        <Link to="/ksiazka">
+          <div className="buyNowButton">Dowiedz się więcej</div>
+        </Link>
       </div>
-      <div id={doubleArrow} onClick={scrollDown} type="button">
-        <FontAwesomeIcon icon={faAngleDoubleDown} />
-      </div>
-    </section>
-  );
-}
+    </div>
+    <div id={showcaseDescription}>
+      <div className={[showcaseParagraph, largeParagraph].join(' ')}>Nowa książka o zdrowym stylu życia</div>
+      <div className={[showcaseParagraph, smallParagraph].join(' ')}>Już wkrótce dostępna</div>
+    </div>
+  </section>
+);
 
 export default Showcase;
