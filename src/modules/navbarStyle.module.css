@@ -1,4 +1,4 @@
-.myNavbar {
+.navbar {
   height: 100%;
   width: 215px;
   justify-content: center;
@@ -7,6 +7,12 @@
   z-index: 200;
   overflow: hidden;
   color: var(--text-color)
+}
+
+@media (max-width: 1150px) {
+  .navbar {
+    width: 200px;
+  }
 }
 
 .flexColumn {
@@ -49,8 +55,6 @@
 .link:hover::after {
   width: 110%;
 }
-
-.underl
 
 @-webkit-keyframes appear {
   0% {
@@ -96,34 +100,6 @@
   width: 100%;
 }
 
-.buyNowButton {
-  width: 160px;
-  height: 45px;
-  background-color: var(--text-color);
-  color: #000;
-  text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
-  font-size: 22px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.2s ease-in;
-  box-shadow: 0px 4px 4px 0px #00000040;
-  text-shadow: 0px 4px 4px #00000040;
-}
-
-.buyNowButton:focus {
-  outline: none;
-}
-
-.buyNowButton:active {
-  transform: translateY(1px);
-}
-
-.buyNowButton:hover {
-  background-color: #f8a622;
-}
-
 @media (max-width: 1150px) {
   .link {
       font-size: 16px;
@@ -131,7 +107,7 @@
 }
 
 @media (max-width: 1000px) {
-  .myNavbar {
+  .navbar {
     display: none;
   }
 }

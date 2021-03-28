@@ -1,17 +1,11 @@
 import React from 'react';
 import Showcase from './Showcase';
-import Services from './Services';
-import MissionStatement from './MissionStatement';
-import CallToAction from './CallToAction';
-import Testimonials from './Testimonials';
+import MainSummary from './MainSummary';
 
 const Main = () => (
   <>
     <Showcase />
-    <MissionStatement />
-    <Services />
-    <Testimonials />
-    <CallToAction />
+    <MainSummary />
   </>
 );
 
