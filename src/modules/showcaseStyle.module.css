@@ -11,8 +11,8 @@
 }
 
 #showcaseHeader {
-  padding: 20px 55px 40px;
-  background: #c4c4c499;
+  padding: 28px 56px;
+  background: var(--primary-color);
 }
 
 .title {
@@ -176,7 +176,7 @@
   }
 
   .showcaseParagraph {
-    line-height: 1.5;
+    line-height: 2;
   }
 }
 
