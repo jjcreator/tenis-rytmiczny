@@ -2,10 +2,10 @@
   --box-shadow: 2px 2px 5px rgb(0, 0, 0);
   --text-color: #FBB13C;
   --text-secondary: #000;
-  --primary-color: #c4c4c4;
+  --primary-color: #F2DCDC;
   --secondary-color: #424242;
-  --tertiary-color: #f9dc5c;
   --attention-color: #ee254e;
+  --white-color: #fff;
   scroll-behavior: smooth;
   font-size: 10px;
 }
