@@ -1,17 +1,17 @@
 .contentPanel {
   width: 100%;
   color: var(--text-secondary);
+  padding-top: 10px;
 }
   
 .contentPanelHeading {
-  /* background: var(--text-color); */
   width: 100%;
   padding: 20px;
 }
 
 .contentPanelTitle {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
 }

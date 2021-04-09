@@ -23,13 +23,10 @@ const images = [
   { image: cycling, alt: 'kolarstwo górskie' },
 ];
 
-const {
-  aboutMe,
-  animated,
-} = styles;
+const { aboutMe } = styles;
 
 const AboutMe = () => (
-  <div className={`flexColumn ${animated} ${aboutMe}`}>
+  <div className={`flexColumn animated ${aboutMe}`}>
     <ContentPanel title="O mnie" heading="Dr Franciszek Jan Walczak" text={aboutMeText} text2={aboutMeText2} img={doctor} alt="moje zdjęcie" imageIsVertical />
     <ImagePanel images={images} />
     <QuotePanel quote={quote} author={author} />

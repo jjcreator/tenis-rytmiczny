@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from '../modules/mobileNavbarStyle.module.css';
-import logo from '../images/logo.svg';
+import logo from '../images/logo2.svg';
 
 const {
   bar1,

@@ -2,7 +2,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from '../modules/navbarStyle.module.css';
-import logo from '../images/logo.svg';
+import logo from '../images/logo2.svg';
 
 const {
   buyNowButtonWrapper, flexColumn, navbar, logoImg, logoContainer, links, link, underline,

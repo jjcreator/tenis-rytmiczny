@@ -19,6 +19,14 @@
   }
 }
 
+.headerBig {
+  color: #000;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .flexColumn {
   flex-direction: column;
   display: flex;
@@ -47,6 +55,9 @@
   font-size: 50px;
 }
 
+.paddingTop {
+  padding-top: 50px;
+}
 @media (max-width: 767px) {
   .largeLetter {
     font-size: 35px;
@@ -120,6 +131,32 @@
       width: 250px;
   }
 }
+
+.animated {
+  -webkit-animation: show 0.4s forwards ease-in;
+          animation: show 0.4s forwards ease-in;
+  }
+  
+  @-webkit-keyframes show {
+      0% {
+          opacity: 0;
+      }
+  
+      100% {
+          opacity: 1;
+      }
+  }
+  
+  @keyframes show {
+      0% {
+          opacity: 0;
+      }
+  
+      100% {
+          opacity: 1;
+      }
+  }
+  
 
 .pop {
   -webkit-animation: pop 0.4s forwards ease-in;
