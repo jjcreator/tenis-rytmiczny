@@ -1,0 +1,34 @@
+.floatingImg {
+  float: right;
+}
+
+.animated {
+-webkit-animation: pop 0.4s forwards ease-in;
+        animation: pop 0.4s forwards ease-in;
+}
+
+@-webkit-keyframes pop {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 500px) {
+  .aboutMe {
+    padding-top: 50px;
+  }
+}
