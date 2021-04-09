@@ -12,7 +12,9 @@
 
 #showcaseHeader {
   padding: 28px 56px;
-  background: var(--primary-color);
+  background: rgba(255, 255, 255, 0.609);
+  border-radius: 0px;
+  margin-top: 20px;
 }
 
 .title {
@@ -20,7 +22,7 @@
   font-family: 'Playfair Display', serif;
   text-shadow: 0px 4px 4px #00000040;
   font-weight: 600;
-  color: var(--text-secondary);
+  color: #000;
   letter-spacing: 6%;
   line-height: 120%;
   text-align: center;
@@ -81,7 +83,7 @@
 
 .smallParagraph {
   color: var(--text-secondary);
-  background: var(--primary-color);
+  background: var(--text-color);
   flex-basis: 35%;
   flex-grow: 2;
 }

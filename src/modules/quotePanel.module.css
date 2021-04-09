@@ -1,0 +1,24 @@
+.quotePanel {
+  color: var(--secondary-color);
+  font-size: 30px;
+  font-weight: 700;
+  width: 100%;
+  padding: 20px 40px 20px 60px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.quoteAuthor {
+  font-size: 25px;
+}
+
+@media (max-width: 767px) {
+  .quotePanel {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .quoteAuthor {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+}

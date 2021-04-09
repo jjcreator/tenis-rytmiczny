@@ -1,0 +1,27 @@
+.imagePanel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.imagePanelImage {
+  width: 24%;
+  max-width: 300px;
+}
+
+.imagePanelImage:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 767px) {
+  .imagePanel {
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .imagePanelImage {
+    width: 100%;
+  }
+}

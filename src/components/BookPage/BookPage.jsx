@@ -1,5 +1,5 @@
 import React from 'react';
-import BookPanel from './BookPanel';
+import ContentPanel from '../Common/ContentPanel';
 import runningWoman from '../../images/womanRunning1.jpg';
 import healthyFood from '../../images/healthyFood1.jpg';
 import tennisPlayer from '../../images/tennisPlayer1.jpg';
@@ -23,7 +23,7 @@ const { bookPage } = styles;
 
 const BookPage = () => (
   <div className={`${bookPage} flexColumn`}>
-    {titlesArray.map((title, index) => <BookPanel img={imagesArray[index]} title={title} text={sampleContent} reverseOrder={index % 2 !== 0} />)}
+    {titlesArray.map((title, index) => <ContentPanel isImgVertical={false} img={imagesArray[index]} title={title} text={sampleContent} reverseOrder={index % 2 !== 0} />)}
   </div>
 
 );

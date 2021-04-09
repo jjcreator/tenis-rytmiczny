@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:wght@700|Roboto&display=swap');
 
 .pageContainer {
-  background: #e5e5e5;
+  background: var(--white-color);
   z-index: 20;
   width: calc(100% - 215px);
   margin: 0 0 0 215px;
   padding: 0;
   position: relative;
   height: 100%;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', sans-serif;
   color: var(--text-color);
 }
 
@@ -30,7 +30,6 @@
   align-items: center;
   background-color: var(--text-color);
   border: none;
-  border-radius: 50px;
   box-shadow: 0px 4px 4px 0px #00000040;
   cursor: pointer;
   color: #000;

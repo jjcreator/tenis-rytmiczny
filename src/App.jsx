@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import './App.css';
 import Main from './components/MainPage/Main';
-import About from './components/AboutPage/About';
-import Contact from './components/ContactPage/Contact';
+import AboutMePage from './components/AboutMePage/AboutMePage';
 import MobileNavbar from './components/MobileNavbar';
 import BookPage from './components/BookPage/BookPage';
 import ScrollToTop from './components/utils/ScrollToTop';
@@ -25,10 +24,10 @@ const App = () => {
             <BookPage />
           </Route>
           <Route path="/recenzje">
-            <About />
+            <AboutMePage />
           </Route>
           <Route path="/autor">
-            <Contact />
+            <AboutMePage />
           </Route>
         </Switch>
       </div>
