@@ -2,4 +2,5 @@
   background: var(--white-color);
   width: 100%;
   color: var(--text-secondary);
+  padding-top: 50px;
 }

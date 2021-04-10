@@ -1,0 +1,71 @@
+.reviewAuthor {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+  padding: 20px;
+}
+
+.reviewCard {
+  align-items: center;
+  background: #e5e5e5;
+  border: 20px solid var(--white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.308);
+  color: #000;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  min-height: 200px;
+  position: relative;
+  width: 80%;
+}
+
+.reviewText {
+  width: 100%;
+  padding: 40px 80px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.reviewQuote {
+  position: absolute;
+  width: 55px;
+}
+
+.upquote {
+  top: -10px;
+  left: -10px;
+}
+
+.downquote {
+  bottom: -10px;
+  right: -10px;
+}
+
+@media (max-width: 767px) {
+  .reviewCard {
+    width: 90%;
+  }
+  .reviewText {
+    padding: 25px 35px;
+  }
+  .reviewQuote {
+    width: 35px;
+  }
+  .reviewAuthor {
+    bottom: -10px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .reviewText, .reviewAuthor {
+    font-size: 14px;
+  }
+  .reviewText {
+    padding: 25px 30px;
+  }
+}

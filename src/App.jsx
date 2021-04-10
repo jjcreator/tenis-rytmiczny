@@ -7,6 +7,7 @@ import AboutMePage from './components/AboutMePage/AboutMePage';
 import MobileNavbar from './components/MobileNavbar';
 import BookPage from './components/BookPage/BookPage';
 import ScrollToTop from './components/utils/ScrollToTop';
+import ReviewsPage from './components/ReviewsPage/ReviewsPage';
 
 const App = () => {
   const [navIsAvailable, setNavIsAvailable] = useState(true);
@@ -24,7 +25,7 @@ const App = () => {
             <BookPage />
           </Route>
           <Route path="/recenzje">
-            <AboutMePage />
+            <ReviewsPage />
           </Route>
           <Route path="/autor">
             <AboutMePage />

@@ -7,7 +7,7 @@ const {
 } = styles;
 
 const ContentPanel = ({
-  alt, heading, img, imageIsVertical, title, text, text2, reverseOrder,
+  alt, heading, img, imageIsVertical, title, text, text2, reverseOrder, children
 }) => (
   <div className={`flexColumn ${contentPanel}`}>
     <div className={contentPanelHeading}>
@@ -18,6 +18,7 @@ const ContentPanel = ({
         {heading && <h2 className={contentPanelTextTitle}>{heading}</h2>}
         <p>{text}</p>
         {text2 && (<p className={secondaryText}>{text2}</p>)}
+        {children}
       </div>
       <div className={!imageIsVertical ? contentPanelImageWrapper : contentPanelImageVerticalWrapper}>
         <img className={contentPanelImage} src={img} alt={alt} />
@@ -28,6 +29,7 @@ const ContentPanel = ({
 );
 
 ContentPanel.defaultProps = {
+  children: undefined,
   reverseOrder: false,
   alt: '',
   heading: '',
@@ -37,6 +39,7 @@ ContentPanel.defaultProps = {
 
 ContentPanel.propTypes = {
   alt: PropTypes.string,
+  children: PropTypes.node,
   heading: PropTypes.string,
   imageIsVertical: PropTypes.bool,
   img: PropTypes.string.isRequired,

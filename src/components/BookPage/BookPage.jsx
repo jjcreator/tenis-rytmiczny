@@ -22,8 +22,8 @@ const imagesArray = [
 const { bookPage } = styles;
 
 const BookPage = () => (
-  <div className={`${bookPage} flexColumn`}>
-    {titlesArray.map((title, index) => <ContentPanel isImgVertical={false} img={imagesArray[index]} title={title} text={sampleContent} reverseOrder={index % 2 !== 0} />)}
+  <div className={`${bookPage} flexColumn animated`}>
+    {titlesArray.map((title, index) => <ContentPanel img={imagesArray[index]} title={title} text={sampleContent} reverseOrder={index % 2 !== 0} />)}
   </div>
 
 );

@@ -70,7 +70,7 @@
 }
 
 .bookCover {
-  background-color: var(--secondary-color);
+  background-color: #e5e5e5;
   height: 325px;
   margin-bottom: 30px;
   width: 225px;
@@ -83,7 +83,7 @@
 
 .smallParagraph {
   color: var(--text-secondary);
-  background: var(--text-color);
+  background: #e5e5e5;
   flex-basis: 35%;
   flex-grow: 2;
 }
@@ -200,7 +200,6 @@
   }
   #showcaseHeader {
     margin-top: 50px;
-    background: #c4c4c4da;
   }
   #showcaseTitle {
     font-size: 26px;
