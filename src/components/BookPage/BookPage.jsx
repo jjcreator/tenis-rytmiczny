@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import ContentPanel from '../Common/ContentPanel';
 import runningWoman from '../../images/womanRunning1.jpg';

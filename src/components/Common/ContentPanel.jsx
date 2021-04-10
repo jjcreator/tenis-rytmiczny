@@ -7,7 +7,7 @@ const {
 } = styles;
 
 const ContentPanel = ({
-  alt, heading, img, imageIsVertical, title, text, text2, reverseOrder, children
+  alt, heading, img, imageIsVertical, title, text, text2, reverseOrder, children,
 }) => (
   <div className={`flexColumn ${contentPanel}`}>
     <div className={contentPanelHeading}>
