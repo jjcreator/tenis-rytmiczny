@@ -74,6 +74,24 @@
   width: 100%;
 }
 
+.paddingLeft {
+  padding-left: 20px;
+}
+
+.paddingRight {
+  padding-right: 20px;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+
+
 @media (max-width: 1200px) {
   .contentPanelImageWrapper {
     width: 35%;
