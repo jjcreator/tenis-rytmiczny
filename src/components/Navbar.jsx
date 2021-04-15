@@ -13,9 +13,13 @@ function Navbar() {
     <nav
       className={`${navbar} ${flexColumn}`}
     >
-      <div className={flexColumn} id={logoContainer}>
-        <img className={logoImg} src={logo} alt="logo tenisa rytmicznego" />
-      </div>
+      <NavLink to="/" exact>
+        {' '}
+        <div className={flexColumn} id={logoContainer}>
+          <img className={logoImg} src={logo} alt="logo tenisa rytmicznego" />
+        </div>
+      </NavLink>
+
       <div className={flexColumn} id={links}>
         <NavLink className={link} activeClassName={underline} exact to="/">Strona główna</NavLink>
         <NavLink className={link} activeClassName={underline} to="/ksiazka">O książce</NavLink>
