@@ -24,7 +24,7 @@ const ContentPanel = ({
         <img className={contentPanelImage} src={img} alt={alt} />
       </div>
     </div>
-    <div className={line} />
+    {!heading && <div className={line} />}
   </div>
 );
 
