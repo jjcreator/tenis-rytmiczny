@@ -21,7 +21,7 @@ const MainSummary = () => (
     <img className={summaryImg} src={runnerImg} alt="biegnący mężczyzna" />
     <div className={summaryText}>
       <span className="largeLetter">J</span>
-      eżeli dotychczas nie wybrałeś odpowiedniej aktywności fizycznej i nie zdecydowałeś się na uprawianie jakiejkolwiek dyscypliny sportowej, lecz chciałbyś prowadzić zdrowy styl życia, to mam dla ciebie jeszcze jedną propozycję. Jest to trenowany przeze mnie przez ostanie pięć lat -
+      eżeli dotychczas nie wybrałeś odpowiedniej aktywności fizycznej i nie zdecydowałeś się na uprawianie jakiejkolwiek dyscypliny sportowej, lecz chciałbyś prowadzić zdrowy styl życia, to mam dla Ciebie jeszcze jedną propozycję. Jest to trenowany przeze mnie przez ostanie pięć lat -
       {' '}
       <span className="boldText">TENIS RYTMICZNY</span>
       . Od początku trenowania będzie rodziło się w Tobie nowe, pozytywne nastawienie do otoczenia, będzie rosła wiara we własne możliwości, będzie kształtował się nowy człowiek, a po trzech miesiącach systematycznego treningu nie będziesz sobie wyobrażał życia bez niego.

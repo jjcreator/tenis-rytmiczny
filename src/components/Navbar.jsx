@@ -26,9 +26,9 @@ function Navbar() {
         <NavLink className={link} activeClassName={underline} to="/recenzje">Recenzje</NavLink>
         <NavLink className={link} activeClassName={underline} to="/autor">Kim jestem?</NavLink>
       </div>
-      <div className={buyNowButtonWrapper}>
-        <button type="button" className="buyNowButton">Kup teraz</button>
-      </div>
+      {/* <div className={buyNowButtonWrapper}>
+        <button type="button" dsiabled className="buyNowButton">Kup teraz</button>
+      </div> */}
     </nav>
   );
 }
