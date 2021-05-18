@@ -13,18 +13,22 @@ function Navbar() {
     <nav
       className={`${navbar} ${flexColumn}`}
     >
-      <div className={flexColumn} id={logoContainer}>
-        <img className={logoImg} src={logo} alt="logo tenisa rytmicznego" />
-      </div>
+      <NavLink to="/" exact>
+        {' '}
+        <div className={flexColumn} id={logoContainer}>
+          <img className={logoImg} src={logo} alt="logo tenisa rytmicznego" />
+        </div>
+      </NavLink>
+
       <div className={flexColumn} id={links}>
         <NavLink className={link} activeClassName={underline} exact to="/">Strona główna</NavLink>
         <NavLink className={link} activeClassName={underline} to="/ksiazka">O książce</NavLink>
         <NavLink className={link} activeClassName={underline} to="/recenzje">Recenzje</NavLink>
         <NavLink className={link} activeClassName={underline} to="/autor">Kim jestem?</NavLink>
       </div>
-      <div className={buyNowButtonWrapper}>
-        <button type="button" className="buyNowButton">Kup teraz</button>
-      </div>
+      {/* <div className={buyNowButtonWrapper}>
+        <button type="button" dsiabled className="buyNowButton">Kup teraz</button>
+      </div> */}
     </nav>
   );
 }

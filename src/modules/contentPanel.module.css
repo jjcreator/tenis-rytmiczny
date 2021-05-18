@@ -25,13 +25,14 @@
 
 .contentPanelText {
   flex: 1;
-  font-size: 16px;
+  font-size: 18px;
   line-height:2;
   max-width: 1200px;
 }
 
 .contentPanelTextTitle {
   font-size: 20px;
+  padding: 20px 0;
 }
 
 .secondaryText {
@@ -72,6 +73,24 @@
   border-top: 1px solid #ddd;
   width: 100%;
 }
+
+.paddingLeft {
+  padding-left: 20px;
+}
+
+.paddingRight {
+  padding-right: 20px;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+
 
 @media (max-width: 1200px) {
   .contentPanelImageWrapper {
