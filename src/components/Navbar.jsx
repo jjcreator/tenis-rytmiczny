@@ -26,9 +26,9 @@ function Navbar() {
         <NavLink className={link} activeClassName={underline} to="/recenzje">Recenzje</NavLink>
         <NavLink className={link} activeClassName={underline} to="/autor">Kim jestem?</NavLink>
       </div>
-      {/* <div className={buyNowButtonWrapper}>
-        <button type="button" dsiabled className="buyNowButton">Kup teraz</button>
-      </div> */}
+      <div className={buyNowButtonWrapper}>
+        <a type="button" target="_blank" rel="noreferrer" href="https://www.gildia.pl/literatura/491792-tenis-rytmiczny-zdrowy-styl-zycia" className="buyNowButton">Kup teraz</a>
+      </div>
     </nav>
   );
 }

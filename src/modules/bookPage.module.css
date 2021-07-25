@@ -4,3 +4,62 @@
   color: var(--text-secondary);
   padding-top: 40px;
 }
+
+.buyListHeader {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.buyListWrapper {
+  padding: 40px;
+  width: 100%;
+  background-color: var(--primary-color);
+  
+}
+
+.buyList {
+  list-style-type: none;
+  display: grid;
+  grid-template: auto/1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 767px) {
+  .buyList {
+    grid-template: auto/1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .buyList {
+    grid-template: auto/auto;
+  }
+}
+
+.buyListItem {
+  padding: 20px;
+  font-size: 18px; 
+  border: 1px solid #fff;
+  text-align: center;
+  transition: all 100ms ease-in;
+}
+
+.buyListItem:hover {
+  background: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.buyListFooter {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px;
+}
+
+@media (max-width: 767px) {
+  .buyListFooter {
+    text-align: left;
+    font-size: 14px;
+  }
+}

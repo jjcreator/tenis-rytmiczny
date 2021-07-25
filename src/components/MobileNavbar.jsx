@@ -17,6 +17,7 @@ const {
   mobileLogo,
   mobileHomeLink,
   mobileLinksWrapper,
+  mobileBuyNow,
 } = styles;
 
 const MobileNavbar = () => {
@@ -44,6 +45,9 @@ const MobileNavbar = () => {
           <NavLink to="/ksiazka" onClick={toggleMobileMenu}>O książce</NavLink>
           <NavLink to="/recenzje" onClick={toggleMobileMenu}>Recenzje</NavLink>
           <NavLink to="/autor" onClick={toggleMobileMenu}>Kim jestem?</NavLink>
+          <div className={mobileBuyNow}>
+            <a type="button" target="_blank" rel="noreferrer" href="https://www.gildia.pl/literatura/491792-tenis-rytmiczny-zdrowy-styl-zycia" className="buyNowButton">Kup teraz</a>
+          </div>
         </div>
       </div>
     </div>

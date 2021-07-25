@@ -15,6 +15,11 @@
   background: rgba(255, 255, 255, 0.609);
   border-radius: 0px;
   margin-top: 20px;
+  margin-right: auto;
+  margin-left: 20px;
+  position: absolute;
+  top: 20px;
+  display: flex;
 }
 
 .title {
@@ -29,11 +34,11 @@
 }
 
 #showcaseTitle {
-  font-size: 60px;
+  font-size: 30px;
 }
 
 #showcaseSubtitle {
-  font-size: 45px;
+  font-size: 25px;
   margin-top: 10px;
 }
 
@@ -64,27 +69,62 @@
 .bookContainer {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 30px;
   margin-top: auto;
   width: 80%;
 }
 
 .bookCover {
-  background-color: #e5e5e5;
-  height: 325px;
+  background-color: transparent;
+  height: 600px;
   margin-bottom: 30px;
-  width: 225px;
+  margin-right: 20px;
+  perspective: 1000px;
+  width: 400px;
+}
+
+.bookCover a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.bookCover:hover a {
+  transform: rotateY(180deg);
+}
+
+.bookCoverFront, .bookCoverBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bookCoverBack {
+  transform: rotateY(180deg);
+}
+
+.bookCoverFront img, .bookCoverBack img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  box-shadow: -15px 15px 25px rgba(0, 0, 0, 0.7);
 }
 
 .largeParagraph {
-  flex-basis: 65%;
+  flex-basis: 60%;
   flex-grow: 1;
 }
 
 .smallParagraph {
   color: var(--text-secondary);
   background: #e5e5e5;
-  flex-basis: 35%;
+  flex-basis: 40%;
   flex-grow: 2;
 }
 
@@ -102,22 +142,18 @@
 
 /* -- Media Queries -- */
   
-@media (max-width: 1380px) {
+@media (max-width: 1480px) {
   #showcaseHeader {
       font-size: 20px;
   }
 
-  #showcaseParagraph {
-      font-size: 15px;
+  .showcaseParagraph {
+    font-size: 20px;
   }
 
-  #showcaseButton {
-      padding: 16px;
-      font-size: 18px;
-  }
-
-  #teamImg {
-      width: 55%;
+  .bookCover {
+    height: 450px;
+    width: 300px;
   }
 }
 
@@ -125,14 +161,8 @@
   #showcase {
     background-position: 0% 50%;
   }
-  #showcaseTitle {
-    font-size: 45px;
-  }
-  #showcaseSubtitle {
-    font-size: 27px;
-  }
   .showcaseParagraph {
-    font-size: 20px;
+    font-size: 18px;
   }
   #showcaseDescription {
     width: 90%;
@@ -141,14 +171,18 @@
     width: 90%;
   }
   .bookCover {
-    height: 280px;
-    width: 180px;
+    height: 350px;
+    width: 250px;
   }
 }
 
 @media (max-width: 1000px) {
   #showcase {
     background-position: 0% 50%;
+  }
+  #showcaseHeader {
+    top: 50px;
+    margin: 0;
   }
 }
 
@@ -164,42 +198,43 @@
     font-size: 35px;
   }
 
-  #showcaseSubtitle {
-    font-size: 20px;
-  }
   .bookContainer {
     justify-content: center;
   }
+
   .bookCover {
-    display: none;
+    margin-right: 0;
   }
+
   #showcaseDescription {
+    flex-direction: column;
+    margin-bottom: 0;
+    height: fit-content;
     width: 100%;
   }
 
   .showcaseParagraph {
     line-height: 2;
   }
-}
 
-@media (max-width: 650px) {
   #showcase {
-    background-position: 15% center;
-    justify-content: space-between;
+    background-position: top;
   }
-  #showcaseDescription {
-    flex-direction: column;
-    margin-bottom: 0;
-    height: fit-content;
+
+  .bookCover {
+    height: 50vh;
+    min-height: 400px;
+    min-width:300px;
   }
 }
 
 @media (max-width: 500px) {
+
   .bookContainer {
     margin-bottom: 10px;
   }
   #showcaseHeader {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   #showcaseTitle {
     font-size: 26px;
@@ -210,10 +245,28 @@
   .showcaseParagraph {
     font-size: 16px;
   }
+
+  .bookCover {
+    height: 50vh;
+    min-height: 350px;
+    min-width:250px;
+  }
 }
 
 @media (max-width: 360px) {
   #showcaseTitle {
     font-size: 22px
+  }
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+  #showcaseHeader {
+    display: none;
+  }
+
+  .bookCover {
+    height: 50vh;
+    min-height: 0;
+    min-width:0;
   }
 }

@@ -2,6 +2,7 @@
   "name": "tenis-rytmiczny",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://www.tenisrytmiczny.pl",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
